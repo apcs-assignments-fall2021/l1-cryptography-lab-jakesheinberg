@@ -116,7 +116,7 @@ public class Caesar {
                 int b= a +(26-key);
                 char c = (char) b;
                 decrypt = decrypt + c;
-            }else if(a>=97+key&&a<=122){
+            }else if(a>=97+key &&a<=122){
                 int b= a -key;
                 char c = (char) b;
                 decrypt = decrypt + c;
@@ -138,6 +138,7 @@ public class Caesar {
 
 
         Scanner scan = new Scanner(System.in);
+        System.out.println(decryptCaesarKey("l", 17));
 
         System.out.println("Would you like to \"encrypt\" or \"decrypt\" a message?");
         String command = scan.nextLine().trim().toLowerCase();
